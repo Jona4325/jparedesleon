@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jonathan Paredes | Portafolio profesional</title>
+<meta name="description" content="Portafolio de Jonathan Paredes, estudiante de Ingeniería en Ciencias de la Computación. Desarrollo web, bases de datos, automatización y ciberseguridad.">
+<meta name="referrer" content="no-referrer">
+<!-- Seguridad: esta página no necesita JavaScript, así que se bloquea por completo.
+     Solo permite imágenes propias, y estilos incluidos en este archivo. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💻%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#142b4a; --muted:#44546a; --line:#c5d3e3; --paper:#fff; --soft:#f3f7fc;
+  --navy:#12345a; --blue:#1769aa; --teal:#00a6a6; --pale:#e8f3fb;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:1rem;top:1rem;background:#fff;padding:.7rem;z-index:20;border:2px solid var(--blue)}
+
+/* Cabecera */
+header{position:sticky;top:0;z-index:10;background:var(--navy);color:#fff;border-bottom:4px solid var(--teal);
+  padding:.8rem max(1rem,calc((100% - 1050px)/2));display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.brand{font-weight:bold;letter-spacing:.02em}
+.nav{display:flex;gap:.4rem;flex-wrap:wrap}
+.nav a,.btn{border:1px solid var(--blue);border-radius:6px;padding:.4rem .75rem;text-decoration:none;background:#fff;color:var(--navy);display:inline-block;font-size:.95rem}
+.nav a:hover,.btn:hover{background:var(--pale);border-color:var(--teal)}
+
+main{max-width:1050px;margin:auto;padding:1.25rem}
+section{scroll-margin-top:5rem}
+
+/* Presentación */
+.hero{display:grid;grid-template-columns:1.4fr .8fr;gap:1.5rem;align-items:center;padding:1.5rem 0 2.5rem}
+.hero h1{font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.15;margin:.2rem 0 .6rem;color:var(--navy)}
+.role{font-size:1.15rem;color:var(--blue);font-weight:bold;margin:0 0 .8rem}
+.hero p{max-width:60ch}
+.actions{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.2rem}
+.btn.primary{background:var(--navy);color:#fff;border-color:var(--navy)}
+.btn.primary:hover{background:var(--blue);border-color:var(--blue)}
+.profile-photo{width:100%;aspect-ratio:4/5;max-height:360px;object-fit:cover;border:3px solid var(--teal);border-radius:10px;background:var(--pale)}
+
+/* Secciones */
+.section{padding:2rem 0;border-top:2px solid var(--line)}
+.section h2{margin:0 0 1rem;color:var(--navy)}
+.about{background:var(--soft);border-left:5px solid var(--teal);padding:1.1rem 1.3rem;border-radius:0 8px 8px 0;max-width:75ch}
+.about p{margin:.4rem 0}
+.tag{display:inline-block;border:1px solid #b8d4e8;border-radius:4px;padding:.2rem .55rem;margin:.2rem .2rem .2rem 0;background:var(--pale);color:var(--navy);font-size:.9rem}
+
+/* Proyectos (usa <details>: abre y cierra sin JavaScript) */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.card{border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:8px;padding:1rem;background:#fff}
+.card h3{margin:0 0 .5rem;font-size:1.05rem}
+.card summary{cursor:pointer;color:var(--blue);font-weight:bold;margin-top:.6rem}
+.card details p{margin:.5rem 0}
+.draft{font-size:.9rem;color:var(--muted)}
+
+/* Formación */
+.timeline{border-left:3px solid var(--teal);margin-left:.5rem;padding-left:1.2rem}
+.timeline article{margin:0 0 1.3rem;position:relative}
+.timeline article::before{content:"";position:absolute;left:calc(-1.2rem - 9px);top:.45rem;width:13px;height:13px;border-radius:50%;background:var(--teal);border:2px solid #fff}
+.timeline h3{margin:0}
+.timeline .where{margin:.1rem 0;color:var(--blue);font-weight:bold}
+.timeline .small{margin:.2rem 0 0;color:var(--muted);font-size:.95rem}
+
+footer{border-top:4px solid var(--teal);padding:1.5rem;text-align:center;background:var(--navy);color:#fff}
+footer a{color:#fff}
+footer p{margin:.3rem 0}
+
+@media(max-width:700px){
+  .hero{grid-template-columns:1fr}
+  .profile-photo{order:-1;max-width:260px;aspect-ratio:1/1}
+  .grid{grid-template-columns:1fr}
+  header{position:static}
+  .nav{width:100%}.nav a{flex:1;text-align:center}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{header,.actions{display:none}.card,.timeline article{break-inside:avoid}}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido principal</a>
+
+<header>
+  <div class="brand">Jonathan Paredes</div>
+  <nav class="nav" aria-label="Navegación principal">
+    <a href="#inicio">Inicio</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#formacion">Formación</a>
+  </nav>
+</header>
+
+<main id="contenido">
+  <section id="inicio" class="hero" aria-labelledby="titulo-principal">
+    <div>
+      <h1 id="titulo-principal">Hola, soy Jonathan Paredes</h1>
+      <p class="role">Estudiante de Ingeniería en Ciencias de la Computación</p>
+      <p>Creo soluciones digitales seguras, eficientes y centradas en las personas para entornos tecnológicos y financieros.</p>
+      <div class="actions">
+        <a class="btn primary" href="#proyectos">Ver proyectos</a>
+        <a class="btn" href="#formacion">Ver formación</a>
+      </div>
+    </div>
+    <img class="profile-photo" src="fotocvjp.jpg" alt="Fotografía de Jonathan Paredes" width="320" height="400">
+  </section>
+
+  <section id="sobre-mi" class="section" aria-labelledby="sobre-title">
+    <h2 id="sobre-title">Sobre mí</h2>
+    <div class="about">
+      <p>Estoy en los últimos años de Ingeniería en Ciencias de la Computación. He participado en desarrollo Front-End y Back-End, soporte técnico e integración de servicios.</p>
+      <p><strong>Áreas de interés:</strong> desarrollo web, bases de datos, automatización y ciberseguridad.</p>
+    </div>
+    <h3>Habilidades</h3>
+    <div>
+      <span class="tag">HTML / CSS / JavaScript</span><span class="tag">Python</span><span class="tag">Java</span><span class="tag">SQL</span><span class="tag">Git / GitHub</span><span class="tag">Redes</span><span class="tag">Power Automate</span>
+    </div>
+  </section>
+
+  <section id="proyectos" class="section" aria-labelledby="proyectos-title">
+    <h2 id="proyectos-title">Proyectos</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Sistema web</h3>
+        <p>Descripción breve del problema, la solución y mi contribución.</p>
+        <p><span class="tag">Front-End</span><span class="tag">Back-End</span></p>
+        <details>
+          <summary>Ver detalles</summary>
+          <p><strong>Objetivo:</strong> desarrollar una funcionalidad web para resolver una necesidad concreta.</p>
+          <p><strong>Mi aporte:</strong> completar con tareas reales, herramientas y resultados.</p>
+        </details>
+      </article>
+
+      <article class="card">
+        <h3>Automatización de procesos</h3>
+        <p>Descripción breve del proceso que se automatizó y su beneficio.</p>
+        <p><span class="tag">Python</span><span class="tag">Power Automate</span></p>
+        <details>
+          <summary>Ver detalles</summary>
+          <p><strong>Objetivo:</strong> reducir pasos manuales y mejorar la consistencia del proceso.</p>
+          <p><strong>Mi aporte:</strong> completar con el flujo, tecnologías y resultado medible.</p>
+        </details>
+      </article>
+
+      <article class="card">
+        <h3>Datos y reportes</h3>
+        <p>Descripción breve del diseño, consultas o análisis realizado.</p>
+        <p><span class="tag">SQL</span><span class="tag">Reportes</span></p>
+        <details>
+          <summary>Ver detalles</summary>
+          <p><strong>Objetivo:</strong> organizar información y facilitar su consulta.</p>
+          <p><strong>Mi aporte:</strong> completar con el modelo, consultas y resultados reales.</p>
+        </details>
+      </article>
+    </div>
+    <p class="draft">Estos tres proyectos son de ejemplo: reemplázalos por tus trabajos reales antes de entregar.</p>
+  </section>
+
+  <section id="formacion" class="section" aria-labelledby="formacion-title">
+    <h2 id="formacion-title">Formación y experiencia</h2>
+    <div class="timeline">
+      <article>
+        <h3>Ingeniería en Ciencias de la Computación</h3>
+        <p class="where">Universidad Politécnica Nacional · 2021 – Actualidad</p>
+      </article>
+      <article>
+        <h3>Practicante de Desarrollo de Software</h3>
+        <p class="where">Municipio del Distrito Metropolitano de Quito · 2025</p>
+        <p class="small">Apoyo en tareas Front-End y Back-End, integración de servicios y resolución de incidencias.</p>
+      </article>
+      <article>
+        <h3>Soporte de Sistemas</h3>
+        <p class="where">Trofeos Boada · 2025</p>
+        <p class="small">Atención de incidencias técnicas y mantenimiento preventivo.</p>
+      </article>
+      <article>
+        <h3>Cursos y certificaciones</h3>
+        <p class="small">CompTIA Security+ (Módulo 1), Cisco Networking Academy y Scrum Fundamentals Certified.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Jonathan Paredes · Portafolio profesional</p>
+  <p><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+</footer>
+</body>
+</html>
