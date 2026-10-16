@@ -4,190 +4,43 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jonathan Paredes | Portafolio profesional</title>
-<meta name="description" content="Portafolio de Jonathan Paredes, estudiante de Ingeniería en Ciencias de la Computación. Desarrollo web, bases de datos, automatización y ciberseguridad.">
-<meta name="referrer" content="no-referrer">
-<!-- Seguridad: esta página no necesita JavaScript, así que se bloquea por completo.
-     Solo permite imágenes propias, y estilos incluidos en este archivo. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💻%3C/text%3E%3C/svg%3E">
 <style>
-:root{
-  --ink:#142b4a; --muted:#44546a; --line:#c5d3e3; --paper:#fff; --soft:#f3f7fc;
-  --navy:#12345a; --blue:#1769aa; --teal:#00a6a6; --pale:#e8f3fb;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
-a{color:var(--blue)}
-:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
-.skip{position:absolute;left:-9999px}
-.skip:focus{left:1rem;top:1rem;background:#fff;padding:.7rem;z-index:20;border:2px solid var(--blue)}
-
-/* Cabecera */
-header{position:sticky;top:0;z-index:10;background:var(--navy);color:#fff;border-bottom:4px solid var(--teal);
-  padding:.8rem max(1rem,calc((100% - 1050px)/2));display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-.brand{font-weight:bold;letter-spacing:.02em}
-.nav{display:flex;gap:.4rem;flex-wrap:wrap}
-.nav a,.btn{border:1px solid var(--blue);border-radius:6px;padding:.4rem .75rem;text-decoration:none;background:#fff;color:var(--navy);display:inline-block;font-size:.95rem}
-.nav a:hover,.btn:hover{background:var(--pale);border-color:var(--teal)}
-
-main{max-width:1050px;margin:auto;padding:1.25rem}
-section{scroll-margin-top:5rem}
-
-/* Presentación */
-.hero{display:grid;grid-template-columns:1.4fr .8fr;gap:1.5rem;align-items:center;padding:1.5rem 0 2.5rem}
-.hero h1{font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.15;margin:.2rem 0 .6rem;color:var(--navy)}
-.role{font-size:1.15rem;color:var(--blue);font-weight:bold;margin:0 0 .8rem}
-.hero p{max-width:60ch}
-.actions{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.2rem}
-.btn.primary{background:var(--navy);color:#fff;border-color:var(--navy)}
-.btn.primary:hover{background:var(--blue);border-color:var(--blue)}
-.profile-photo{width:100%;aspect-ratio:4/5;max-height:360px;object-fit:cover;border:3px solid var(--teal);border-radius:10px;background:var(--pale)}
-
-/* Secciones */
-.section{padding:2rem 0;border-top:2px solid var(--line)}
-.section h2{margin:0 0 1rem;color:var(--navy)}
-.about{background:var(--soft);border-left:5px solid var(--teal);padding:1.1rem 1.3rem;border-radius:0 8px 8px 0;max-width:75ch}
-.about p{margin:.4rem 0}
-.tag{display:inline-block;border:1px solid #b8d4e8;border-radius:4px;padding:.2rem .55rem;margin:.2rem .2rem .2rem 0;background:var(--pale);color:var(--navy);font-size:.9rem}
-
-/* Proyectos (usa <details>: abre y cierra sin JavaScript) */
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-.card{border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:8px;padding:1rem;background:#fff}
-.card h3{margin:0 0 .5rem;font-size:1.05rem}
-.card summary{cursor:pointer;color:var(--blue);font-weight:bold;margin-top:.6rem}
-.card details p{margin:.5rem 0}
-.draft{font-size:.9rem;color:var(--muted)}
-
-/* Formación */
-.timeline{border-left:3px solid var(--teal);margin-left:.5rem;padding-left:1.2rem}
-.timeline article{margin:0 0 1.3rem;position:relative}
-.timeline article::before{content:"";position:absolute;left:calc(-1.2rem - 9px);top:.45rem;width:13px;height:13px;border-radius:50%;background:var(--teal);border:2px solid #fff}
-.timeline h3{margin:0}
-.timeline .where{margin:.1rem 0;color:var(--blue);font-weight:bold}
-.timeline .small{margin:.2rem 0 0;color:var(--muted);font-size:.95rem}
-
-footer{border-top:4px solid var(--teal);padding:1.5rem;text-align:center;background:var(--navy);color:#fff}
-footer a{color:#fff}
-footer p{margin:.3rem 0}
-
-@media(max-width:700px){
-  .hero{grid-template-columns:1fr}
-  .profile-photo{order:-1;max-width:260px;aspect-ratio:1/1}
-  .grid{grid-template-columns:1fr}
-  header{position:static}
-  .nav{width:100%}.nav a{flex:1;text-align:center}
-}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-@media print{header,.actions{display:none}.card,.timeline article{break-inside:avoid}}
+:root{--ink:#17263c;--muted:#65748a;--paper:#f4f6f9;--white:#fff;--navy:#101d32;--navy2:#1a2d49;--blue:#315b8a;--accent:#b79a62;--line:#dce2ea;--soft:#edf1f6;--pale:#e8edf4}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}a{color:inherit}button,a{font-size:1rem}a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}.skip{position:absolute;left:-9999px;top:auto}.skip:focus{left:1rem;top:1rem;background:#fff;padding:.7rem;z-index:10;border:2px solid var(--blue)}
+header{position:sticky;top:0;z-index:5;background:rgba(16,29,50,.98);color:#fff;padding:.85rem max(1.25rem,calc((100% - 1100px)/2));display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-bottom:1px solid #34445a;box-shadow:0 4px 18px #101d3218}.brand{font-weight:750;letter-spacing:.02em}.brand span{color:var(--accent)}.nav{display:flex;gap:.4rem;flex-wrap:wrap}.nav a{padding:.45rem .7rem;text-decoration:none;color:#dce4ef;border:1px solid transparent;border-radius:5px;transition:background .2s,color .2s}.nav a:hover{background:#263b58;color:#fff;border-color:#405574}
+main{max-width:1100px;margin:auto;padding:2rem 1.25rem 3rem}.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.15em;font-weight:750;color:var(--blue)}.hero{display:grid;grid-template-columns:1.35fr .75fr;gap:2rem;align-items:center;margin:1.2rem 0 3.5rem;padding:clamp(1.5rem,4vw,3.5rem);background:var(--white);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 35px #182d4710;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--accent)}.hero-copy{max-width:650px}.hero h1{font-size:clamp(2.2rem,5vw,3.8rem);line-height:1.1;letter-spacing:-.045em;margin:.6rem 0 1rem;color:var(--navy)}.hero-lead{font-size:1.12rem;color:var(--muted);max-width:600px}.hero-actions{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.5rem}.profile-photo{display:block;width:100%;height:330px;max-height:380px;object-fit:cover;object-position:center 30%;border-radius:10px;background:var(--soft);border:1px solid var(--line);box-shadow:10px 10px 0 var(--pale)}
+.btn{border:1px solid var(--navy);border-radius:6px;padding:.72rem 1rem;text-decoration:none;background:var(--navy);color:#fff;display:inline-flex;align-items:center;justify-content:center;gap:.4rem;font-weight:650;cursor:pointer;transition:transform .2s,background .2s}.btn:hover{background:var(--navy2);transform:translateY(-1px)}.btn.secondary{background:#fff;color:var(--navy);border-color:var(--line)}.btn.secondary:hover{background:var(--soft)}
+.section{padding:2.2rem 0 2.5rem;border-top:1px solid var(--line);scroll-margin-top:90px}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:1rem;margin-bottom:1.3rem}.section h2{font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.2;margin:0;color:var(--navy);letter-spacing:-.025em}.section-intro{color:var(--muted);max-width:680px;margin:.65rem 0 1.5rem}.about-panel{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:1.5rem}.about-panel p:first-child{margin-top:0}.about-panel p:last-child{margin-bottom:0}.skill-label{margin:1.5rem 0 .7rem;font-size:1rem}.skills{display:flex;flex-wrap:wrap;gap:.5rem}.tag{display:inline-block;border:1px solid #d4dce7;border-radius:5px;padding:.35rem .65rem;background:#f6f8fb;color:#2a405d;font-size:.9rem;font-weight:550}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}.card{border:1px solid var(--line);border-radius:10px;padding:1.35rem;background:var(--white);box-shadow:0 5px 20px #182d4708;display:flex;flex-direction:column;align-items:flex-start;transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-3px);box-shadow:0 12px 25px #182d4710}.project-number{font-size:.76rem;letter-spacing:.13em;font-weight:800;color:var(--accent)}.card h3{margin:.35rem 0 .6rem;color:var(--navy);line-height:1.3}.card p{color:var(--muted)}.card .tags{margin:.3rem 0 1rem}.card .detail-btn{margin-top:auto}.detail-panel{border-top:1px solid var(--line);margin-top:1rem;padding-top:.6rem;width:100%}.detail-panel p{font-size:.94rem}.timeline{position:relative;margin:1rem 0 0 .45rem;padding-left:1.5rem;border-left:2px solid #cbd4e0}.timeline article{position:relative;background:var(--white);border:1px solid var(--line);border-radius:9px;padding:1rem 1.2rem;margin:0 0 1rem}.timeline article:before{content:"";position:absolute;left:-1.95rem;top:1.35rem;width:10px;height:10px;border-radius:50%;background:var(--accent);border:3px solid var(--paper)}.timeline h3{margin:0 0 .2rem;font-size:1.08rem;color:var(--navy)}.timeline p{margin:.2rem 0;color:var(--muted)}.timeline .date{font-size:.83rem;text-transform:uppercase;letter-spacing:.08em;color:var(--blue);font-weight:750}.small{font-size:.9rem;color:var(--muted)}footer{background:var(--navy);color:#e9eef5;padding:1.6rem 1.25rem;text-align:center;border-top:3px solid var(--accent)}footer p{margin:.25rem}
+@media(max-width:760px){header{align-items:flex-start}.nav{width:100%;gap:.25rem}.nav a{flex:1;text-align:center;font-size:.9rem;padding:.45rem .35rem}.hero{grid-template-columns:1fr;gap:1.5rem}.profile-photo{height:300px;max-width:340px;justify-self:center}.grid{grid-template-columns:1fr}.section-heading{display:block}.hero h1{font-size:2.5rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
 </style>
 </head>
 <body>
 <a class="skip" href="#contenido">Saltar al contenido principal</a>
-
 <header>
-  <div class="brand">Jonathan Paredes</div>
-  <nav class="nav" aria-label="Navegación principal">
-    <a href="#inicio">Inicio</a>
-    <a href="#sobre-mi">Sobre mí</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#formacion">Formación</a>
-  </nav>
+  <div class="brand"><span>JP</span> · PORTAFOLIO</div>
+  <nav class="nav" aria-label="Navegación principal"><a href="#inicio">Inicio</a><a href="#sobre-mi">Sobre mí</a><a href="#proyectos">Proyectos</a><a href="#formacion">Formación y experiencia</a></nav>
 </header>
-
 <main id="contenido">
+  
   <section id="inicio" class="hero" aria-labelledby="titulo-principal">
-    <div>
-      <h1 id="titulo-principal">Hola, soy Jonathan Paredes</h1>
-      <p class="role">Estudiante de Ingeniería en Ciencias de la Computación</p>
-      <p>Creo soluciones digitales seguras, eficientes y centradas en las personas para entornos tecnológicos y financieros.</p>
-      <div class="actions">
-        <a class="btn primary" href="#proyectos">Ver proyectos</a>
-        <a class="btn" href="#formacion">Ver formación</a>
-      </div>
-    </div>
-    <img class="profile-photo" src="fotocvjp.jpg" alt="Fotografía de Jonathan Paredes" width="320" height="400">
+    <div class="hero-copy"><p class="eyebrow">Ingeniería en Ciencias de la Computación</p><h1 id="titulo-principal">Jonathan Paredes</h1><p class="hero-lead">Desarrollo de software · Automatización · Datos</p><p>Creo en la tecnología como una herramienta para resolver problemas reales. Me interesa construir soluciones digitales claras, confiables y útiles para las personas y las organizaciones.</p><div class="hero-actions"><a class="btn" href="#proyectos">Explorar proyectos <span aria-hidden="true">↗</span></a><a class="btn secondary" href="#formacion">Mi trayectoria</a></div></div>
+    <img class="profile-photo" src="fotocvjp.jpg" alt="Fotografía de Jonathan Paredes">
   </section>
-
-  <section id="sobre-mi" class="section" aria-labelledby="sobre-title">
-    <h2 id="sobre-title">Sobre mí</h2>
-    <div class="about">
-      <p>Estoy en los últimos años de Ingeniería en Ciencias de la Computación. He participado en desarrollo Front-End y Back-End, soporte técnico e integración de servicios.</p>
-      <p><strong>Áreas de interés:</strong> desarrollo web, bases de datos, automatización y ciberseguridad.</p>
-    </div>
-    <h3>Habilidades</h3>
-    <div>
-      <span class="tag">HTML / CSS / JavaScript</span><span class="tag">Python</span><span class="tag">Java</span><span class="tag">SQL</span><span class="tag">Git / GitHub</span><span class="tag">Redes</span><span class="tag">Power Automate</span>
-    </div>
-  </section>
-
-  <section id="proyectos" class="section" aria-labelledby="proyectos-title">
-    <h2 id="proyectos-title">Proyectos</h2>
-    <div class="grid">
-      <article class="card">
-        <h3>Sistema web</h3>
-        <p>Descripción breve del problema, la solución y mi contribución.</p>
-        <p><span class="tag">Front-End</span><span class="tag">Back-End</span></p>
-        <details>
-          <summary>Ver detalles</summary>
-          <p><strong>Objetivo:</strong> desarrollar una funcionalidad web para resolver una necesidad concreta.</p>
-          <p><strong>Mi aporte:</strong> completar con tareas reales, herramientas y resultados.</p>
-        </details>
-      </article>
-
-      <article class="card">
-        <h3>Automatización de procesos</h3>
-        <p>Descripción breve del proceso que se automatizó y su beneficio.</p>
-        <p><span class="tag">Python</span><span class="tag">Power Automate</span></p>
-        <details>
-          <summary>Ver detalles</summary>
-          <p><strong>Objetivo:</strong> reducir pasos manuales y mejorar la consistencia del proceso.</p>
-          <p><strong>Mi aporte:</strong> completar con el flujo, tecnologías y resultado medible.</p>
-        </details>
-      </article>
-
-      <article class="card">
-        <h3>Datos y reportes</h3>
-        <p>Descripción breve del diseño, consultas o análisis realizado.</p>
-        <p><span class="tag">SQL</span><span class="tag">Reportes</span></p>
-        <details>
-          <summary>Ver detalles</summary>
-          <p><strong>Objetivo:</strong> organizar información y facilitar su consulta.</p>
-          <p><strong>Mi aporte:</strong> completar con el modelo, consultas y resultados reales.</p>
-        </details>
-      </article>
-    </div>
-    <p class="draft">Estos tres proyectos son de ejemplo: reemplázalos por tus trabajos reales antes de entregar.</p>
-  </section>
-
-  <section id="formacion" class="section" aria-labelledby="formacion-title">
-    <h2 id="formacion-title">Formación y experiencia</h2>
-    <div class="timeline">
-      <article>
-        <h3>Ingeniería en Ciencias de la Computación</h3>
-        <p class="where">Universidad Politécnica Nacional · 2021 – Actualidad</p>
-      </article>
-      <article>
-        <h3>Practicante de Desarrollo de Software</h3>
-        <p class="where">Municipio del Distrito Metropolitano de Quito · 2025</p>
-        <p class="small">Apoyo en tareas Front-End y Back-End, integración de servicios y resolución de incidencias.</p>
-      </article>
-      <article>
-        <h3>Soporte de Sistemas</h3>
-        <p class="where">Trofeos Boada · 2025</p>
-        <p class="small">Atención de incidencias técnicas y mantenimiento preventivo.</p>
-      </article>
-      <article>
-        <h3>Cursos y certificaciones</h3>
-        <p class="small">CompTIA Security+ (Módulo 1), Cisco Networking Academy y Scrum Fundamentals Certified.</p>
-      </article>
-    </div>
-  </section>
+  <section id="sobre-mi" class="section" aria-labelledby="sobre-title"><div class="section-heading"><h2 id="sobre-title">Perfil profesional</h2></div><div class="about-panel"><p>Soy estudiante de los últimos años de Ingeniería en Ciencias de la Computación. He participado en actividades de desarrollo Front-End y Back-End, soporte técnico e integración de servicios.</p><p><strong>Áreas de interés:</strong> desarrollo web · bases de datos · automatización · ciberseguridad.</p></div><h3 class="skill-label">Competencias técnicas</h3><div class="skills"><span class="tag">HTML / CSS / JavaScript</span><span class="tag">Python</span><span class="tag">Java</span><span class="tag">SQL</span><span class="tag">Git / GitHub</span><span class="tag">Redes</span><span class="tag">Power Automate</span></div></section>
+  <section id="proyectos" class="section" aria-labelledby="proyectos-title"><div class="section-heading"><h2 id="proyectos-title">Proyectos seleccionados</h2></div><p class="section-intro">Una muestra de áreas en las que he trabajado y de soluciones que puedo desarrollar. Los detalles deben completarse con resultados verificables de cada proyecto.</p><div class="grid">
+    <article class="card"><span class="project-number">PROYECTO 01</span><h3>Sistema web</h3><p>Descripción breve del problema, la solución y mi contribución.</p><p class="tags"><span class="tag">Front-End</span><span class="tag">Back-End</span></p><button class="btn detail-btn" data-target="detail1" aria-expanded="false">Ver detalles</button><div id="detail1" class="detail-panel" hidden><p><strong>Objetivo:</strong> desarrollar una funcionalidad web para resolver una necesidad concreta.</p><p><strong>Mi aporte:</strong> completar con tareas reales, herramientas y resultados.</p></div></article>
+    <article class="card"><span class="project-number">PROYECTO 02</span><h3>Automatización de procesos</h3><p>Descripción breve del proceso que se automatizó y su beneficio.</p><p class="tags"><span class="tag">Python</span><span class="tag">Datos</span></p><button class="btn detail-btn" data-target="detail2" aria-expanded="false">Ver detalles</button><div id="detail2" class="detail-panel" hidden><p><strong>Objetivo:</strong> reducir pasos manuales y mejorar la consistencia del proceso.</p><p><strong>Mi aporte:</strong> completar con el flujo, tecnologías y resultado medible.</p></div></article>
+    <article class="card"><span class="project-number">PROYECTO 03</span><h3>Datos y reportes</h3><p>Descripción breve del diseño, consultas o análisis realizado.</p><p class="tags"><span class="tag">SQL</span><span class="tag">Reportes</span></p><button class="btn detail-btn" data-target="detail3" aria-expanded="false">Ver detalles</button><div id="detail3" class="detail-panel" hidden><p><strong>Objetivo:</strong> organizar información y facilitar su consulta.</p><p><strong>Mi aporte:</strong> completar con el modelo, consultas y resultados reales.</p></div></article>
+  </div><p class="small">Antes de publicar, sustituye las descripciones de ejemplo por proyectos propios y resultados verificables.</p></section>
+  <section id="formacion" class="section" aria-labelledby="formacion-title"><div class="section-heading"><h2 id="formacion-title">Formación y experiencia</h2></div><div class="timeline"><article><p class="date">Formación académica</p><h3>Ingeniería en Ciencias de la Computación</h3><p>Escuela Politécnica Nacional · 2021–Actualidad</p></article><article><p class="date">2025 · Desarrollo</p><h3>Practicante de Desarrollo de Software</h3><p>Municipio del Distrito Metropolitano de Quito · 2025</p><p class="small">Apoyo en tareas Front-End y Back-End, integración de servicios y resolución de incidencias.</p></article><article><p class="date">2025 · Soporte técnico</p><h3>Soporte de Sistemas</h3><p>Trofeos Boada · 2025</p><p class="small">Atención de incidencias técnicas y mantenimiento preventivo.</p></article><article><p class="date">Formación complementaria</p><h3>Cursos y certificaciones</h3><p>CompTIA Security+ (Módulo 1), Cisco Networking Academy y Scrum Fundamentals Certified.</p></article></div></section>
+  
 </main>
+<footer><p>Jonathan Paredes · Portafolio profesional</p><p class="small">Desarrollo de software · Automatización · Datos</p></footer>
+<script>
+document.querySelectorAll('.detail-btn').forEach(button=>{button.addEventListener('click',()=>{const panel=document.getElementById(button.dataset.target);const opening=panel.hidden;panel.hidden=!opening;button.setAttribute('aria-expanded',String(opening));button.textContent=opening?'Ocultar detalles':'Ver detalles';});});
 
-<footer>
-  <p>Jonathan Paredes · Portafolio profesional</p>
-  <p><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-</footer>
+</script>
 </body>
 </html>
+
